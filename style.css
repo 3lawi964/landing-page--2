@@ -1,0 +1,141 @@
+.container{
+    background-color: hsl(0, 0%, 95%);
+    min-height: calc(100vh - 0px);
+    /* position: relative; */
+    display:flex;
+    align-items: center;
+    
+}
+.card-container{
+    /* background-color: aquamarine; */
+    max-width: 85rem;
+    height:80%;
+    margin:0 auto;
+
+    display:flex;
+
+
+    /* position: absolute;
+    top:0;
+    bottom:50%; */
+    border-radius: 12px;
+}
+figure{
+    /* background-color: red; */
+    padding:4.8rem;
+    display:flex;
+    flex-direction: column;
+    gap:8rem;
+}
+figure:first-child{
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 9px;
+    border-bottom-left-radius:9px;
+}
+figure:nth-child(2){
+    color: hsl(184, 100%, 22%);
+    background-color: hsl(184, 100%, 22%);
+}
+figure:last-child{
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    gap:3.2rem;
+}
+h2{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-weight:700;
+    font-size:4rem;
+    color:rgb(255, 255, 255);
+}
+p{
+    color:rgba(255, 255, 255, 0.711);
+    font-weight:400;
+    font-family: 'Lexend Deca';
+    font-size:1.4rem;
+    line-height:1.8;
+}
+
+a:link, a:visited{
+    display:inline-block;
+    text-decoration: none;
+    color:inherit;
+    background-color: #fff;
+    padding:1.6rem 3.2rem;
+    border-radius: 100px;
+    font-family:'Lexend Deca';
+    font-size:1.4rem;
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+    transition: all 0.3s;
+    margin-top:4.8rem;
+    
+}
+a:hover, a:active{
+    background-color:transparent;
+    box-shadow: inset 0 0 0 0.2rem #fff;
+    color:#fff;
+}
+
+.icon{
+    width:6.4rem;
+    height:4rem;
+
+}
+.copyright{
+    display:inline-block;
+    color:#000;
+    transform: rotate(90deg);
+}
+
+
+@media (max-width:60em){
+
+    .card-container{
+        flex-direction: column;
+        padding:4.8rem;
+    }
+    figure:first-child{
+        /* border-top-left-radius: 9px;
+        border-top-right-radius:9px; */
+        border-radius: 9px 9px 0 0 ;
+
+    }
+   
+    figure:last-child{
+        border-bottom-right-radius: 9px;
+        border-bottom-left-radius: 9px;
+        border-radius: 0 0 9px 9px;
+    }
+    p{
+        font-size:2.4rem;
+    }
+    h2{
+        font-size:6.4rem ;
+    }
+    .icon{
+        height:6rem;
+        width:8rem;
+    }
+    a:link, a:visited{
+        width:50%;
+        padding:2rem 3.6rem;
+        font-size:2rem;
+    }
+   
+  }
+  @media (max-width:30em){
+    a:link, a:visited{
+        width:80%;
+        padding:2rem 3.6rem;
+        font-size:1.8rem;
+    }
+  }
